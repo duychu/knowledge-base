@@ -31,6 +31,13 @@ const config: Config = {
     locales: ['en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+  themes: [
+    '@docusaurus/theme-mermaid'
+  ],
+
   presets: [
     [
       'classic',
@@ -79,6 +86,12 @@ const config: Config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Tutorial',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'homelabSidebar',
+          position: 'left',
+          label: 'Homelab',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
